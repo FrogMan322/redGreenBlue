@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>RGB</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form__cotaniner">
+        <form id="form__values">
+          <div class="red">
+            <label for="red">R</label>
+            <input type="range" value="0" min="0" max="255" id="red" />
+          </div>
+          <div class="green">
+            <label for="green">G</label>
+            <input type="range" value="0" min="0" max="255" id="green" />
+          </div>
+          <div class="blue">
+            <label for="blue">B</label>
+            <input type="range" value="0" min="0" max="255" id="blue" />
+          </div>
+        </form>
+      </div>
+      <div class="value__container">
+        <div class="rgb_values">
+          <h1>rgb(0,0,0)</h1>
+        </div>
+        <div class="copy__color__code">
+          <button id="copyBtn" type="button">COPY CODE</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
