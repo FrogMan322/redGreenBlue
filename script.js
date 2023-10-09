@@ -5,6 +5,7 @@ const green = document.getElementById("green");
 const blue = document.getElementById("blue");
 const rgbValues = document.querySelector(".rgb_values > h1");
 const copyBtn = document.getElementById("copyBtn");
+
 form.addEventListener("input", (e) => {
   e.preventDefault();
   const redColor = red.value;
