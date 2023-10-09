@@ -27,3 +27,6 @@ form.addEventListener("input", (e) => {
       });
   });
 });
+copyBtn.addEventListener("click", (e) => {
+  alert("Code Added To Clipboard");
+});
