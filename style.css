@@ -83,7 +83,7 @@ label {
 
 .copyActive {
   background-color: red;
-  animation: alerting normal 350ms;
+  animation: alerting normal 400ms;
 }
 
 @keyframes alerting {

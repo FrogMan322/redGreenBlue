@@ -32,8 +32,9 @@ form.addEventListener("input", (e) => {
 });
 copyBtn.addEventListener("click", (e) => {
   rgbValuesContainer.classList.add("copyActive");
-
-  setTimeout(() => {
+});
+rgbValuesContainer.addEventListener("animationend", (e) => {
+  if (e.elapsedTime) {
     rgbValuesContainer.classList.remove("copyActive");
-  }, 1300);
+  }
 });
