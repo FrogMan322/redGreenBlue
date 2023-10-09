@@ -36,5 +36,6 @@ copyBtn.addEventListener("click", (e) => {
 rgbValuesContainer.addEventListener("animationend", (e) => {
   if (e.elapsedTime) {
     rgbValuesContainer.classList.remove("copyActive");
+    alert("RGB was added to clipboard");
   }
 });
