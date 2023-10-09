@@ -3,6 +3,7 @@ const form = document.querySelector("#form__values");
 const red = document.getElementById("red");
 const green = document.getElementById("green");
 const blue = document.getElementById("blue");
+const rgbValuesContainer = document.querySelector(".rgb_values");
 const rgbValues = document.querySelector(".rgb_values > h1");
 const copyBtn = document.getElementById("copyBtn");
 
@@ -28,5 +29,9 @@ form.addEventListener("input", (e) => {
   });
 });
 copyBtn.addEventListener("click", (e) => {
-  alert("Code Added To Clipboard");
+  rgbValuesContainer.classList.add("copyActive");
+
+  setTimeout(() => {
+    rgbValuesContainer.classList.remove("copyActive");
+  }, 1000);
 });
