@@ -83,23 +83,28 @@ label {
 
 .copyActive {
   background-color: red;
-  animation: alerting normal 200ms;
+  animation: alerting normal 350ms;
 }
 
 @keyframes alerting {
   0% {
     background-color: rgba(255, 0, 0, 0.103);
+    transform: translate(15px);
   }
   25% {
     background-color: rgba(255, 0, 0, 0.293);
+    transform: translate(-15px);
   }
   50% {
     background-color: rgba(255, 0, 0, 0.558);
+    transform: translate(15px);
   }
   75% {
     background-color: rgba(255, 0, 0, 0.629);
+    transform: translate(-15px);
   }
   100% {
+    transform: translate(0);
     background-color: rgba(255, 0, 0, 0.8);
   }
 }
